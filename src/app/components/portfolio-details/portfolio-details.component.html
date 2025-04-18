@@ -6,7 +6,7 @@
 
     <!-- Portfolio Single -->
     <div class="slick-slider slick-single-image">
-        <img [src]="project?.image" class="project__featured-img" alt="{{ project?.title }}"
+        <img [src]="project.image" class="project__featured-img" alt="{{ project.title }}"
             style="height: 500px; object-fit: cover;">
     </div>
 
@@ -29,7 +29,7 @@
                         procédures - Choix Architecte et correction du projet lauréat - Passation de marchés
                         d'entreprises</p> -->
                     <h4 class="text-primary">Objectifs du projet</h4>
-                    <p class="text-secondary" [innerHTML]="project?.objectifs"></p>
+                    <p class="text-secondary" [innerHTML]="project.objectifs"></p>
                     <div class="gallery gallery-size-large">
                         <figure class="gallery-item">
                             <div class="gallery-icon landscape">
@@ -43,7 +43,7 @@
                         </figure>
                     </div>
                     <h4 class="text-primary">Notre Approche</h4>
-                    <p class="text-secondary" [innerHTML]="project?.approach"></p>
+                    <p class="text-secondary" *ngIf="project.approach" [innerHTML]="project.approach"></p>
                     <!-- <p class="text-secondary">Chaque réussite repose sur une préparation rigoureuse et des choix stratégiques. Nous avons
                         adopté une méthodologie structurée pour garantir l'excellence :
 
