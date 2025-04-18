@@ -1,0 +1,70 @@
+<app-header></app-header>
+
+<div class="content-wrapper content-wrapper--boxed oh">
+
+    <!-- Page Title -->
+    <section class="page-title bg-dark-overlay text-center"
+        style="background-image: url('assets/img/page-title/portfolio.jpg');">
+        <div class="container">
+            <div class="page-title__holder">
+                <h1 class="page-title__title">Portfolio Gallery</h1>
+                <p class="page-title__subtitle">Découvrez nos projets récents et nos réalisations innovantes.</p>
+            </div>
+        </div>
+    </section> <!-- end page title -->
+
+    <!-- Portfolio -->
+    <section class="section-wrap">
+        <div class="container-fluid container-semi-fluid">
+
+            <!-- Filter -->
+            <div class="masonry-filter text-center">
+               
+                <a href="#" class="filter active" data-filter="*">Tous</a>
+                <a href="#" class="filter" data-filter=".residential">Résidentiel</a>
+                <a href="#" class="filter" data-filter=".commercial">Commercial</a>
+                <a href="#" class="filter" data-filter=".interior">Intérieur</a>
+                <a href="#" class="filter" data-filter=".landscape">Paysage</a>
+            </div> <!-- end filter -->
+
+            <div class="row masonry-grid">
+
+                <ng-container *ngIf="projects.length > 0; else noImage">
+                  <div class="masonry-item col-lg-3 project hover-trigger residential" *ngFor="let project of projects">
+                    <div class="project__container">
+                        <div class="project__img-holder">
+                            <a [routerLink]="['/portfolio-details', project.id]">
+                                <img [src]="project?.image" class="project__img" alt="{{ project?.title }}">
+                                <div class="hover-overlay">
+                                    <div class="project__description">
+                                        <h3 class="project__title">{{ project?.title }}</h3>
+                                        <span class="project__date">{{ project?.year }}</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                  </div> <!-- end project -->
+                </ng-container>
+
+                <ng-template #noImage>
+                    <div class="container">
+                        <div class="alert alert-danger alert--left text-center" role="alert" style="margin-left: 25%; margin-right: 25%;">
+                            Il n'y a pas encore d'image dans la galerie
+                        </div>
+                    </div>
+                </ng-template>
+
+            </div>
+        </div>
+    </section> <!-- end portfolio -->
+
+
+    <!-- Footer -->
+    <app-footer></app-footer>
+
+    <div id="back-to-top">
+        <a href="#top"><i class="ui-arrow-up"></i></a>
+    </div>
+
+</div>

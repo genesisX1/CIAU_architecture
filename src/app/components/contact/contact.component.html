@@ -1,0 +1,133 @@
+<main class="main-wrapper">
+
+    <!-- Navigation -->
+    <app-header></app-header><!-- end navigation -->
+
+
+    <div class="content-wrapper content-wrapper--boxed oh">
+
+        <!-- Page Title -->
+        <section class="page-title bg-dark-overlay text-center"
+            style="background-image: url('assets/img/page-title/contact.jpeg');">
+            <div class="container">
+                <div class="page-title__holder">
+                    <h1 class="page-title__title">Contact</h1>
+                </div>
+            </div>
+        </section> <!-- end page title -->
+
+        <!-- Contact -->
+        <section class="section-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="contact">
+                            <h5 class="contact__title">Cabinet CIAU</h5>
+                            <ul class="contact__items">
+                                <li class="contact__item">
+                                    <span class="contact__item-label">Address:</span>
+                                    <address>973 Avenue de la CHANCE LOME-TOGO</address>
+                                </li>
+                                <li class="contact__item">
+                                    <span class="contact__item-label">Phone: </span>
+                                    <a href="tel:+228-22-51-95-40">+228 22 51 95 40 |</a>
+                                    <a href="tel:+228-90-05-59-13"> 90 05 59 13 |</a>
+                                    <a href="tel:+228-79-83-83-76"> 79 83 83 76 |</a>
+                                    <a href="tel:+228-90-04-16-30"> 90 04 16 30 </a>
+                                </li>
+                                <li class="contact__item">
+                                    <span class="contact__item-label">Email: </span>
+                                    <a href="mailto:cabinetciau@yahoo.fr">cabinetciau@yahoo.fr</a>
+                                </li>
+                            </ul>
+
+                            <h5 class="contact__title mt-40">Suivez-nous</h5>
+                            <div class="socials">
+                                <a href="#" class="social social-twitter" aria-label="twitter" title="twitter"
+                                    target="_blank"><i class="ui-twitter"></i></a>
+                                <a href="#" class="social social-facebook" aria-label="facebook" title="facebook"
+                                    target="_blank"><i class="ui-facebook"></i></a>
+                                <!-- <a href="#" class="social social-youtube" aria-label="youtube" title="google plus"
+                                    target="_blank"><i class="ui-youtube"></i></a> -->
+                                <a href="#" class="social social-instagram" aria-label="instagram" title="instagram"
+                                    target="_blank"><i class="ui-instagram"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 offset-lg-1">
+                        <h2>Obtenir un devis</h2>
+                        <p class="mb-40">Si vous avez des questions sur le coût de votre projet, contactez-nous.</p>
+                        <!-- Contact Form -->
+                        <form id="contact-form" class="contact-form material" method="post" action="#">
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <!-- Name -->
+                                    <div class="material__form-group form-group">
+                                        <input type="text" name="name" id="name" class="form-input material__input"
+                                            required="">
+                                        <label for="name" class="material__label">Nom
+                                            <abbr title="required" class="required">*</abbr>
+                                        </label>
+                                        <span class="material__underline"></span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <!-- Email -->
+                                    <div class="material__form-group form-group">
+                                        <input type="email" name="email" id="email" class="form-input material__input"
+                                            required="">
+                                        <label for="email" class="material__label">Email
+                                            <abbr title="required" class="required">*</abbr>
+                                        </label>
+                                        <span class="material__underline"></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Subject -->
+                            <div class="material__form-group form-group">
+                                <input type="text" name="subject" id="subject" class="form-input material__input">
+                                <label for="subject" class="material__label">Sujet
+                                </label>
+                                <span class="material__underline"></span>
+                            </div>
+
+                            <div class="material__form-group form-group">
+                                <textarea id="message" name="message" rows="7" class="form-input material__input"
+                                    required=""></textarea>
+                                <label for="message" class="material__label">Message
+                                    <abbr title="required" class="required">*</abbr>
+                                </label>
+                                <span class="material__underline"></span>
+                            </div>
+
+                            <input type="submit" class="btn btn--lg btn--color btn--button btn--green"
+                                value="envoyer un message" id="submit-message"
+                                style="background-color: rgba(0, 128, 0, 0.742); color: #fff;">
+                            <div id="msg" class="message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section> <!-- end contact -->
+
+
+        <!-- Google Map -->
+        <div class="gmap">
+            <iframe class="gmap-iframe"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126932.39775676353!2d1.2083639!3d6.1925575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x102159e5892eabd9%3A0x3fa3c5737cca04ba!2sCabinet%20CIAU%20BP%2014327%202973%20Av.%20de%20la%20Chance%20Lom%C3%A9!5e0!3m2!1sfr!2sfr!4v1713395700000!5m2!1sfr!2sfr"
+                allowfullscreen="" aria-hidden="false" tabindex="0"
+                title="Localisation du Cabinet CIAU à Lomé"></iframe>
+        </div>
+
+        <!-- Footer -->
+        <app-footer></app-footer> <!-- end footer -->
+
+        <div id="back-to-top">
+            <a href="#top"><i class="ui-arrow-up"></i></a>
+        </div>
+
+    </div> <!-- end content wrapper -->
+</main>

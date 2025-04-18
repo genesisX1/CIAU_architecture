@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Testimonials Section Styles */
+.section-wrap {
+    padding: 100px 0;
+    position: relative;
+}
+
+.bg-dark-overlay {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg-dark-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.title-row {
+    margin-bottom: 60px;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 48px;
+    color: #fff;
+    font-style: italic;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 0 20px;
+}
+
+.testimonial__body {
+    margin-bottom: 30px;
+}
+
+.testimonial__text {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+.testimonial__info {
+    color: #fff;
+}
+
+.testimonial__author {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial__company {
+    display: block;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Slick Slider Custom Styles */
+.slick-dots {
+    bottom: -40px;
+}
+
+.slick-dots li button:before {
+    color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #fff;
+}

@@ -1,0 +1,44 @@
+.partner-logo-custom {
+  max-width: 90px;
+  max-height: 54px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  object-fit: contain;
+  filter: grayscale(20%);
+  transition: filter 0.2s, transform 0.2s;
+}
+.partner-logo-custom:hover {
+  filter: grayscale(0%);
+  transform: scale(1.08);
+}
+
+/* Espace entre logos partenaires sur mobile */
+@media (max-width: 576px) {
+  .partner-logo-sma {
+    margin-bottom: 18px;
+  }
+  .partners .row {
+    row-gap: 18px;
+  }
+  /* Projets: occuper toute la largeur en mobile */
+  .masonry-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .masonry-item.project {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+  .project__img-holder {
+    aspect-ratio: 16/10;
+    min-height: 120px;
+  }
+}
+
+.partners {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
