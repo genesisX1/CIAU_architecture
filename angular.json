@@ -25,28 +25,26 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/@splidejs/splide/dist/css/splide.min.css"
+              "src/styles.css"
             ],
             "scripts": [
-              "node_modules/gsap/dist/gsap.min.js",
-              "src/assets/js/jquery.min.js",
-              "src/assets/js/bootstrap.min.js",
-              "src/assets/js/plugins.js",
-              "src/assets/revolution/js/jquery.themepunch.tools.min.js",
-              "src/assets/revolution/js/jquery.themepunch.revolution.min.js",
-              "src/assets/js/rev-slider.js",
-              "src/assets/js/scripts.js",
-              "src/assets/revolution/js/extensions/revolution.extension.video.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.carousel.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.slideanims.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.actions.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.kenburn.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.navigation.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.migration.min.js",
-              "src/assets/revolution/js/extensions/revolution.extension.parallax.min.js"
-            ]
+  "src/assets/js/jquery.min.js",
+  "src/assets/js/bootstrap.min.js",
+  "src/assets/js/plugins.js",
+  "src/assets/revolution/js/jquery.themepunch.tools.min.js",
+  "src/assets/revolution/js/jquery.themepunch.revolution.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.video.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.carousel.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.slideanims.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.actions.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.kenburn.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.navigation.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.migration.min.js",
+  "src/assets/revolution/js/extensions/revolution.extension.parallax.min.js",
+  "src/assets/js/rev-slider.js",
+  "src/assets/js/scripts.js"
+]
           },
           "configurations": {
             "production": {

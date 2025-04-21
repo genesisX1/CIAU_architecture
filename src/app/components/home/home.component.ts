@@ -97,3 +97,19 @@ export class HomeComponent implements AfterViewInit {
     });
   }
 }
+
+    const scriptUrls = [
+      'assets/js/plugins.js',
+      'assets/js/scripts.js',
+      'assets/revolution/js/jquery.themepunch.tools.min.js',
+      'assets/revolution/js/jquery.themepunch.revolution.min.js',
+      'assets/js/slick.min.js'  // Ajout de Slick Slider
+    ];
+
+    scriptUrls.forEach(url => {
+      const script = document.createElement('script');
+      script.src = url;
+      script.async = true;
+      document.body.appendChild(script);
+    });
+  
